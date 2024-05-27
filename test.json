@@ -1,0 +1,97 @@
+// Student:
+{
+  "Student Details": {
+    "Name": "Akshit Dudeja",
+    "Email": "21cs01026@iitbbs.ac.in",
+    "Roll Number": "21CS01026"
+  },
+  "Personal Details": {
+    "Category": "",
+    "PWD": false,
+    "Permanent Address": "",
+    "Correspondence Address": ""
+  },
+  "Academic Details": {
+    "School": "",
+    "Branch": "CSE",
+    "Batch": 2021
+  },
+  "Bank Details": {
+    "Name of Benificiary": "",
+    "Account Number": "",
+    "Name of the Bank": "",
+    "IFSC Code": "",
+    "Address of Bank": ""
+  },
+  "Parents Information": {
+    "Father's Name": "",
+    "Father's Occupation": "",
+    "Father's Mobile Number": "",
+    "Mother's Name": "",
+    "Mother's Occupation": "",
+    "Mother's Mobile Number": "",
+    "Present Postal Address": ""
+  },
+  "Results": {
+    "Semester 1": {
+      "CSE101_2024_CSE":{
+        "Grade": "A",
+        "Marks": 90
+      }
+
+    }
+  }
+}
+
+
+// Courses: CourseID_Year_Batch
+{
+    "Course Details": {
+        "Course Name": "Data Structures and Algorithms",
+        "Course Code": "CSE101",
+        "Credits": 4,
+        "Instructor": "Dr. Sudeepa Roy"
+        "Instructor Id": "21CS01026"
+    },
+    "Course Schedule":[ {
+        "Day": "Monday",
+        "Time": "9:00 AM",
+        "Room Number": "LH1"
+    }],
+    "Students":{
+        "21CS01026":{
+            "Feedback":"",
+            "Attendence":
+                {
+                    "1":false,
+                    "2":true,
+                }
+            "Assignments":[
+                {
+                    "1":{
+                        "Marks": 10,
+                        "feedback": "Good work",
+                        "submission": "2021-08-10"
+                    }
+
+                }
+            ]
+        }
+    },
+    "Total Classes": 30,
+    "Attendence":{
+        "1":{
+            "date": "2021-08-02",
+            "time": "9:00 AM",
+            "students": ["21CS01026", "21CS01027"]
+        }
+    },
+    "Assignments":{
+        "1":{
+            "name":"Assignment 1",
+            "deadline": "2021-08-10",
+            "total_marks": 10,
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+import React from "react";
+import LogoutIcon from "@mui/icons-material/Logout";
+import logo from "../../Images/logo.png";
+import { firebaseApp } from "../../firebase";
+import { getAuth } from "firebase/auth";
+import studentContext from "../../store/student-context";
+import { useContext } from "react";
+const Header = () => {
+  const logout = () => {
+    const auth = getAuth(firebaseApp);
+    auth.signOut();
+  };
+  const { store } = useContext(studentContext);
+  const name = store?.["Student Details"]?.["Name"] ?? "N/A";
+
+  return (
+    <div className="flex-[0.05] flex justify-between items-center mx-10 my-6">
+      <div className="flex items-center ">
+        <img src={logo} alt="" className="h-12 mr-5" />
+        <h1 className="font-bold text-blue-600 text-3xl">
+          Indian Institute of Technology Bhubaneswar
+        </h1>
+      </div>
+      <div className="flex items-center space-x-3 text-3xl font-semibold">
+        <h1>{name}</h1>
+        <LogoutIcon
+          onClick={logout}
+          className="cursor-pointer hover:scale-125 transition-all"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Header;

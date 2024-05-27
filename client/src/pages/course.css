@@ -1,0 +1,149 @@
+.container {
+    padding: 2rem 0rem;
+  }
+  
+  h4 {
+    margin: 2rem 0rem 1rem;
+  }
+  
+  .table-image td,
+  .table-image th {
+    vertical-align: middle;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #dddddd;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    /* Hide table header (but retain accessibly) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    /* Add padding to table cells */
+    td {
+      padding: 10px;
+    }
+  
+    /* Set width and float for the first column */
+    td:nth-of-type(1) {
+      width: 100%;
+      float: left;
+    }
+  
+    /* Set width and float for remaining columns */
+    td:nth-of-type(n+2) {
+      width: 100%;
+      float: left;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+/* .container {
+    padding: 2rem 0rem;
+  }
+  
+  h4 {
+    margin: 2rem 0rem 1rem;
+  }
+  
+  .table-image {
+    td, th {
+      vertical-align: middle;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #dddddd;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table, thead {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    td {
+      /* We're making the table full width, and allowing it to scroll.
+      The CSS overflow property doesn't apply to table rows, so we have
+      to apply it to the table cells */
+      /* width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+  
+    td:nth-child(1) {
+      /* The first table column should be 20% of the full width,
+      since it contains the course code */
+      /* width: 20%;
+      float: left; */
+    /* } */
+  
+    /* td:nth-child(n+2) { */
+      /* The remaining columns should be 80% of the full width,
+      and float following the course code column */
+      /* width: 80%;
+      float: left; */
+    /* }
+  }  */ 
