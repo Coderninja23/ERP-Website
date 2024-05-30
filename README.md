@@ -2,13 +2,7 @@
  
 Presenting our entry for the GC-2024 Webathon Challenge! Our team has crafted an all-in-one system for colleges. It helps manage student profiles, course sign-ups, attendance, grades, feedback, events. Designed with ease of use in mind, our solution streamlines tasks for administrators and boosts student involvement across campus.
 
-## Clone or download
-
-
-```
-$ yarn # or npm i
-$git clone https://github.com/akshitdudeja125/GC-Webathon-2024.git
-```
+https://gc-webathon-2024.vercel.app/
 
 ## Client-Side Usage
 ```
